@@ -30,11 +30,10 @@ print("Tres primeras letras:", artista[:3])
 print("Tres últimas letras:", artista[-3:])
 
 
-hora = "21:00"
-
-horas = int(hora[:2])
-minutos = int(hora[3:])
-
-total = horas * 60 + minutos
-
-print("Minutos desde medianoche:", total)
+horaInicio = input("Introduce la hora de inicio del concierto (formato 24h): ")
+horaFin = input("Introduce la hora de fin del concierto (formato 24h): ")
+horasInicio=int(horaInicio[:2])
+minutosInicio=int(horaInicio[3:5])
+horasFin=int(horaFin[0:2])
+minutosFin=int(horaFin[3:5])
+print("El concierto dura", (horasFin-horasInicio), "horas y", (minutosFin-minutosInicio), "minutos")
